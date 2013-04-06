@@ -1,6 +1,6 @@
 GIT
-  remote: git@github.com:albertohm/private_pub.git
-  revision: 168b94347ecb4af27d05a774dfe5dfc44544f2e2
+  remote: git://github.com/albertohm/private_pub.git
+  revision: 450d757ac4e509a7c976df14bce23b753f7957b5
   specs:
     private_pub (1.0.3)
       faye
