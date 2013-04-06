@@ -5,6 +5,6 @@ test:
   server: "http://localhost:9292/faye"
   secret_token: "secret"
 production:
-  server: "http://example.com/faye"
-  secret_token: "c49fc1d5fcf41385e8a48cda7151c8bc3eab2c84474cf94d3d6a301f033b4c21"
+  server: <%= ENV['FAYE_SERVER'] %>
+  secret_token: <%= ENV['FAYE_PASSWORD'] %>
   signature_expiration: 3600 # one hour
