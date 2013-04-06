@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:albertohm/private_pub.git
+  revision: 168b94347ecb4af27d05a774dfe5dfc44544f2e2
+  specs:
+    private_pub (1.0.3)
+      faye
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -101,8 +108,6 @@ GEM
     multi_json (1.7.2)
     origin (1.0.11)
     polyglot (0.3.3)
-    private_pub (1.0.3)
-      faye
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -163,7 +168,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   mongoid
-  private_pub
+  private_pub!
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
   thin
