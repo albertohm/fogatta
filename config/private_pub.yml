@@ -5,6 +5,6 @@ test:
   server: "http://localhost:9292/faye"
   secret_token: "secret"
 production:
-  server: <%= ENV['FAYE_SERVER'] %>
-  secret_token: <%= ENV['FAYE_PASSWORD'] %>
+  server: "http://fogatta-faye.herokuapp.com/faye"
+  secret_token: "anything"
   signature_expiration: 3600 # one hour
