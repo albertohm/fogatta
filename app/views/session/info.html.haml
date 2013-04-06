@@ -1,0 +1,9 @@
+%div.row
+  %div.span6.offset3
+    .auth-required
+      %h2 Sign in
+
+      %h4
+        In order to ensure that you have access to the repository, you have to
+        = link_to "sign in with your GitHub account.", GitHub.url_for_auth(github_auth_url)
+

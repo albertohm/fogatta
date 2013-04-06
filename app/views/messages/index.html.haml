@@ -2,7 +2,9 @@
 
 %ul#chat
   - @messages.each do |message|
-    %li= message.content
+    %li
+      %strong= "#{message.author}:"
+      = message.content
 
 = form_for Message.new, remote: true do |f|
   = f.text_field :content
