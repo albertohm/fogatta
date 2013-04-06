@@ -2,4 +2,11 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 PrivatePub.subscribe "/messages/new", (data, channel) ->
-  alert data.message.content
+  author = $('<strong>', text: "#{data.message.author}: ")
+  message = $('<span>', text: data.message.content)
+
+  newLi = $("<li>").append(author)
+  newLi.append(message)
+
+  $('ul#chat').append(newLi)
+  $('input#message_content').val("")
