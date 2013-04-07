@@ -3,7 +3,7 @@
 %ul#chat
   - @messages.each do |message|
     %li
-      %strong.autor= "#{message.author}:"
+      %strong.autor= "[#{message.created_at if message.created_at}] #{message.author}:"
       %span= message.content
 
 = form_for Message.new, remote: true do |f|

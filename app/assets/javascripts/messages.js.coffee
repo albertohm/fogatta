@@ -2,7 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 PrivatePub.subscribe "/messages/new", (data, channel) ->
-  author = $('<strong>', text: "#{data.message.author}: ")
+  timestamp = new Date(data.message.created_at)#.toRelativeTime()
+  author = $('<strong>', text: "[#{timestamp}] #{data.message.author}: ")
   message = $('<span>', text: data.message.content)
 
   newLi = $("<li>").append(author)
